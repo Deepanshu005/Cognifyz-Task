@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+    <style>
+        button {
+            margin:200px 500px; 
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;             
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            color : black;
+            border: 2px solid black;
+            box-shadow: 4px 4px 4px #999999;
+        }
+        button:hover{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            box-shadow: 8px 7px 10px rgb(162, 212, 95); 
+            background-color: black;
+            color: aquamarine;
+
+
+        }
+        button:focus,
+        button:active {
+            /* swap colors */
+            color: #EBF5FF;
+            background-color: #4312AE;
+            cursor: pointer;
+            /* displays a hand */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Create an alert box that displays a
+        greeting message based on the current
+        time using JavaScript.</h2>
+    <button onclick="displayGreeting()">Show Greeting</button>
+
+</body>
+<script>
+    function displayGreeting() {
+  const currentTime = new Date().getHours();
+  let greetingMessage;
+
+  if (currentTime < 12) {
+    greetingMessage = "Good morning!";
+  } else if (currentTime < 18) {
+    greetingMessage = "Good afternoon!";
+  } else {
+    greetingMessage = "Good evening!";
+  }
+
+  alert(greetingMessage);
+}
+
+displayGreeting();
+</script>
+
+</html>

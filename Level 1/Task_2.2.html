@@ -43,25 +43,26 @@
         greeting message based on the current
         time using JavaScript.</h2>
     <button onclick="displayGreeting()">Show Greeting</button>
+    <script>
+      function displayGreeting() {
+    const currentTime = new Date().getHours();
+    let greetingMessage;
+  
+    if (currentTime < 12) {
+      greetingMessage = "Good morning!";
+    } else if (currentTime < 18) {
+      greetingMessage = "Good afternoon!";
+    } else {
+      greetingMessage = "Good evening!";
+    }
+  
+    alert(greetingMessage);
+  }
+  
+  displayGreeting();
+  </script>
+  
 
 </body>
-<script>
-    function displayGreeting() {
-  const currentTime = new Date().getHours();
-  let greetingMessage;
-
-  if (currentTime < 12) {
-    greetingMessage = "Good morning!";
-  } else if (currentTime < 18) {
-    greetingMessage = "Good afternoon!";
-  } else {
-    greetingMessage = "Good evening!";
-  }
-
-  alert(greetingMessage);
-}
-
-displayGreeting();
-</script>
 
 </html>

@@ -65,35 +65,35 @@
     <p id="result"></p>
 
     </div>
+    <script>
+
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+        const resultParagraph = document.getElementById('result');
+        const addBtn = document.getElementById('add-btn');
     
-</body>
-<script>
-
-    const num1Input = document.getElementById('num1');
-    const num2Input = document.getElementById('num2');
-    const resultParagraph = document.getElementById('result');
-    const addBtn = document.getElementById('add-btn');
-
-
-    addBtn.addEventListener('click', addNumbers);
-
-
-    function addNumbers() {
-
-        const num1 = parseFloat(num1Input.value);
-        const num2 = parseFloat(num2Input.value);
-
-
-        if (!isNaN(num1) && !isNaN(num2)) {
-
-            const sum = num1 + num2;
-
-
-            resultParagraph.textContent = `Result: ${sum}`;
-        } else {
-            resultParagraph.textContent = 'Please enter valid numbers';
+    
+        addBtn.addEventListener('click', addNumbers);
+    
+    
+        function addNumbers() {
+    
+            const num1 = parseFloat(num1Input.value);
+            const num2 = parseFloat(num2Input.value);
+    
+    
+            if (!isNaN(num1) && !isNaN(num2)) {
+    
+                const sum = num1 + num2;
+    
+    
+                resultParagraph.textContent = `Result: ${sum}`;
+            } else {
+                resultParagraph.textContent = 'Please enter valid numbers';
+            }
         }
-    }
-</script>
+    </script>
+</body>
+
 
 </html>

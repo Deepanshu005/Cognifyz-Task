@@ -68,7 +68,7 @@
         #home {
             display: flex;
             flex-direction: column;
-            padding: 3px 200px;
+            padding: 3px 100px;
             height: 578px;
             justify-content: center;
             align-items: center;
@@ -77,7 +77,7 @@
         #home::before {
             content: "";
             position: absolute;
-            background: url(bg.jpeg) no-repeat center center/cover;
+            background: url(photos/bg.jpeg) no-repeat center center/cover;
             height: 643px;
             width: 100%;
             top: 0px;
@@ -197,7 +197,7 @@
         #client-section::before {
             content: " ";
             position: absolute;
-            background: url(client.jpg);
+            background: url(photos/client.jpg);
             width: 100%;
             height: 300px;
             opacity: 0.2;
@@ -231,7 +231,7 @@
             height: 100%;
             opacity: 0.4;
             z-index: -1;
-            background: url(contact.jfif);
+            background: url(photos/contact.jfif);
         }
 /* Base styles */
 * {
@@ -297,7 +297,7 @@ main {
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="logo.png" alt="Cognifyz">
+            <img src="photos/logo.png" alt="Cognifyz">
         </div>
         <ul>
             <li class="class"><a href="#home">Home</a></li>
@@ -306,99 +306,107 @@ main {
             <li class="class"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
-    <section id="home">
-        <h1 class="h-primary">Web Developer Internship Opportunities at Cognifyz Technologies</h1>
-        <p>"Face challenges as opportunities, much like Cognifyz Technologies navigates innovation. With determination
-            and belief in your potential, every hurdle becomes a stepping stone to success."
-        </p>
-
-        <button class="btn">Apply Now</button>
-    </section>
-    <section class="services-container" id="internship">
-        <h1 class="h-primary center">Internship Offers</h1>
-        <div id="services">
-            <div class="box">
-                <img src="web d.jpg" alt="">
-                <h2 class="h-secondary center">Web Development </h2>
-                <p class="center">A web development course typically covers the essential skills and technologies needed
-                    to build and maintain websites. The curriculum usually includes both front-end and back-end
-                    development. Front-end development focuses on creating the visual and interactive aspects of a
-                    website using HTML, CSS, and JavaScript, along with popular frameworks like React or Angular. </p>
+    <div>
+        <div class="container">
+            <div class="header">
+              <h1 class="h-primary">Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+              <p>Are you ready to kickstart your career in web development? 
+                Join our dynamic internship program and gain hands-on experience in cutting-edge technologies!</p>
             </div>
-            <div class="box">
-                <img src="ai.jfif" alt="">
-                <h2 class="h-secondary center">Artificial Intelligence</h2>
-                <p class="center">An Artificial Intelligence (AI) course provides a comprehensive understanding of the
-                    principles and techniques used to create intelligent systems. The curriculum typically covers
-                    fundamental topics such as machine learning, neural networks, natural language processing, and
-                    computer vision. Students learn about algorithms, data structures, and statistical methods essential
-                    for developing AI models. </p>
-            </div>
-            <div class="box">
-                <img src="full stack.png" alt="">
-                <h2 class="h-secondary center">Full Stack Developer</h2>
-                <p class="center">Learn modern front-end technologies and frameworks. Create responsive designs and
-                    interactive user interfaces.</p>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <h1 class="h-primary center">About Our Internship Program</h1>
-        <p>Cognifyz Technologies specializes in data science, delivering impactful projects and solutions. Our
-            internship program offers hands-on experience in web development, artificial intelligence, machine learning,
-            and data analytics.</p>
-        <li>Gain real-world experience working on cutting-edge projects</li>
-        <li> Learn from industry experts and receive mentorship</li>
-        <li> Enhance your skills in AI, ML, and data analytics</li>
-        <li>Opportunity to work with innovative and cutting-edge solutions</li>
-    </section>
-
-    <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-            <div class="client-items">
-                <img src="1.1.png" alt="">
-            </div>
-            <div class="client-items">
-                <img src="1.2.png" alt="">
-            </div>
-            <div class="client-items">
-                <img src="1.3.png" alt="">
-            </div>
-            
-        </div>
-    </section>
-    <section id="contact">
-        <h1 class="h-primary center">Contact us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="Name">Name</label>
-                    <input type="text" name="Name" id="Name" placeholder="Enter your name">
-
-                    <div class="form-group">
-                        <label for="email">Email Id</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+            <div class="content">
+              <section id="home">
+                <p>"Face challenges as opportunities, much like Cognifyz Technologies navigates innovation. With determination
+                    and belief in your potential, every hurdle becomes a stepping stone to success."
+                </p>
+                <button class="btn">Apply Now</button>
+              </section>
+              <section class="services-container" id="internship">
+                <h1 class="h-primary center">Internship Offers</h1>
+                <div id="services">
+                    <div class="box">
+                        <img src="photos/web d.jpg" alt="">
+                        <h2 class="h-secondary center">Web Development </h2>
+                        <p class="center">A web development course typically covers the essential skills and technologies needed
+                            to build and maintain websites. The curriculum usually includes both front-end and back-end
+                            development. Front-end development focuses on creating the visual and interactive aspects of a
+                            website using HTML, CSS, and JavaScript, along with popular frameworks like React or Angular. </p>
                     </div>
-                    <div class="form-group">
-                        <label for="Phone_NO">Phone No</label>
-                        <input type="phone" name="Phone_NO" id="Phone_NO" placeholder="Enter your Phone number">
+                    <div class="box">
+                        <img src="photos/ai.jfif" alt="">
+                        <h2 class="h-secondary center">Artificial Intelligence</h2>
+                        <p class="center">An Artificial Intelligence (AI) course provides a comprehensive understanding of the
+                            principles and techniques used to create intelligent systems. The curriculum typically covers
+                            fundamental topics such as machine learning, neural networks, natural language processing, and
+                            computer vision. Students learn about algorithms, data structures, and statistical methods essential
+                            for developing AI models. </p>
                     </div>
-
-
-                    <div class="form-group">
-                        <label for="message">Feedback</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <div class="box">
+                        <img src="photos/full stack.png" alt="">
+                        <h2 class="h-secondary center">Full Stack Developer</h2>
+                        <p class="center">Learn modern front-end technologies and frameworks. Create responsive designs and
+                            interactive user interfaces.</p>
                     </div>
-                    <button class="btn">Apply Now</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="center">
-            Copyright &copy; www.Cognifyz.com. All rights reserved!
-        </div>
-    </footer>
+                </div>
+            </section>
+            <section id="about">
+                <h1 class="h-primary center">About Our Internship Program</h1>
+                <p>Cognifyz Technologies specializes in data science, delivering impactful projects and solutions. Our
+                    internship program offers hands-on experience in web development, artificial intelligence, machine learning,
+                    and data analytics.</p>
+                <li>Gain real-world experience working on cutting-edge projects</li>
+                <li> Learn from industry experts and receive mentorship</li>
+                <li> Enhance your skills in AI, ML, and data analytics</li>
+                <li>Opportunity to work with innovative and cutting-edge solutions</li>
+            </section>
+        
+            <section id="client-section">
+                <h1 class="h-primary center">Our Clients</h1>
+                <div id="clients">
+                    <div class="client-items">
+                        <img src="photos/1.1.png" alt="">
+                    </div>
+                    <div class="client-items">
+                        <img src="photos/1.2.png" alt="">
+                    </div>
+                    <div class="client-items">
+                        <img src="photos/1.3.png" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="contact">
+                <h1 class="h-primary center">Contact us</h1>
+                <div id="contact-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your name">
+        
+                            <div class="form-group">
+                                <label for="email">Email Id</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone_NO">Phone No</label>
+                                <input type="phone" name="Phone_NO" id="Phone_NO" placeholder="Enter your Phone number">
+                            </div>
+        
+        
+                            <div class="form-group">
+                                <label for="message">Feedback</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="btn">Apply Now</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="center">
+                    Copyright &copy; www.Cognifyz.com. All rights reserved!
+                </div>
+            </footer>            </div> 
+          </div>
+   
 </body>
 
 </html>
